@@ -1,0 +1,12 @@
+<h2>These are all the Songs</h2>
+
+<div data-ng-repeat="grumble in vm.grumbles">
+  <p><a data-ui-sref="grumbleShow({id: grumble.id})">{{grumble.title}}</a></p>
+</div>
+
+<div data-ng-repeat="song in vm.songs">
+  <h3>{{song.name}}</h3>
+  <h4>{{song.artist}}</h4>
+  <p>{{song.album}}</p>
+  <p>{{song.link}}</p>
+</div>

@@ -1,7 +1,10 @@
-<div class="songs" data-ng-repeat="song in vm.songs">
-  <h3 class="song">
-    <a href="{{song.song_link}}">
-    {{song.title}} - <i>{{song.artist}}</i>
-    </a>
-  </h3>
+<div class="fill-area-column grow">
+  <div class="fill-area-column" data-ng-repeat="song in vm.songs">
+    <h3 class="song">
+      <a href="{{song.song_link}}">
+      {{song.title}} - <i>{{song.artist}}</i>
+      </a>
+    </h3>
+  </div>
+  <a class="link" data-ui-sref="songNew">Create New Song</a>
 </div>

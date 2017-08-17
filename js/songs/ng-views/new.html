@@ -1,0 +1,19 @@
+<div class="fill-area-column grow">
+  <h2>New Song</h2>
+
+  <form class="fill-area-column grow">
+    <label for="title">Title</label>
+    <input name="title" placeholder="Title" data-ng-model="vm.song.title" />
+
+    <label for="artist-name">Artist Name</label>
+    <input name="artist-name" placeholder="Artist name" data-ng-model="vm.song.artist" />
+
+    <label for="song-link">Song Link</label>
+    <input name="song-link" placeholder="Song URL" data-ng-model="vm.song.song_link" />
+
+    <label for="album">Album</label>
+    <input name="album" placeholder="Album" data-ng-model="vm.song.album"></input>
+
+    <button type="button" data-ng-click="vm.create()">Create</button>
+  </form>
+</div>

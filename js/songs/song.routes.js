@@ -17,5 +17,11 @@ function Router ($stateProvider, $urlRouterProvider) {
     controller: 'SongsIndexController',
     controllerAs: 'vm'
   })
+  .state('songNew', {
+    url: '/songs/new',
+    templateUrl: 'js/songs/ng-views/new.html',
+    controller: 'SongsNewController',
+    controllerAs: 'vm'
+  })
   $urlRouterProvider.otherwise('/songs')
 }

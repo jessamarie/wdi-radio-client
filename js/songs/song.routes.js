@@ -9,9 +9,10 @@ angular
 
 function Router ($stateProvider) {
   $stateProvider
+  // Add a state for the routes / and /songs
   .state('songsIndex', {
     url: '/songs',
-    templateUrl: './ng-views/index.html',
+    templateUrl: 'js/songs/ng-views/index.html',
     controller: 'SongsIndexController',
     controllerAs: 'vm'
   })

@@ -4,10 +4,11 @@ angular
 .module('radio')
 .config([
   '$stateProvider',
+  '$urlRouterProvider',
   Router
 ])
 
-function Router ($stateProvider) {
+function Router ($stateProvider, $urlRouterProvider) {
   $stateProvider
   // Add a state for the routes / and /songs
   .state('songsIndex', {
@@ -16,4 +17,5 @@ function Router ($stateProvider) {
     controller: 'SongsIndexController',
     controllerAs: 'vm'
   })
+  $urlRouterProvider.otherwise('/songs')
 }

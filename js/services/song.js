@@ -7,5 +7,5 @@ angular
   ])
 
 function songsService ($resource) {
-  return $resource('http://localhost:3000/songs')
+  return $resource('http://localhost:3000/songs.json')
 }
